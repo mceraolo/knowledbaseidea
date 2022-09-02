@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap link-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+     
+    <title>SPS Knowledge Base</title>
+    <!-- CSS -->
+      <link rel="stylesheet" href="app.css" type="text/css">
+
+
+
+
+    <style>
+        .loader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #F5F8FA;
+            z-index: 9998;
+            text-align: center;
+        }
+
+        .plane-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app" class="paper-loading">
+<!-- Header -->
+<nav class="mainnav navbar navbar-default justify-content-between">
+    <div class="container relative">
+        <!-- <a class="offcanvas dl-trigger paper-nav-toggle" data-toggle="offcanvas"
+           aria-expanded="false" aria-label="Toggle navigation">
+            <i></i>
+        </a> -->
+        <a class="navbar-brand" href="#">
+            <img class="d-inline-block align-top" alt="" src="img/header.png">
+        </a>
+        <div class="paper_menu">
+            <div id="dl-menu" class="xv-menuwrapper responsive-menu">
+            <ul class="dl-menu align-items-center">
+                <li><a href="#">Download</a></li>
+                <li class="parent"><a href="#">Solutions</a>
+                    <ul class="lg-submenu">
+                        <li><a href="#">FAQs</a>
+                        <li><a href="#">Call Records</a>
+                        <li><a href="#">Documentation</a>
+                        <li><a href="#">Semy's Corner</a>                            <li><a href="alltopics.html">All Topics</a>                            
+                        </li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">RoadMaps</a>
+                    <ul class="lg-submenu">
+                        <li><a href="#">SR16/16a</a>
+                        <li><a href="#">SR17/17a</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Authorized Caller</a>
+                    <ul class="lg-submenu">
+                        <li><a href="#">Issue Status</a>
+                        <li><a href="#">Script-Aid Security Codes</a>
+                        <li><a href="#">Submit Issue</a>
+                        <li><a href="#">Authoized Caller Utility</a>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li><a href="#" class="btn btn-default nav-btn">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </div>        
+</nav>
+        <div class="container">
+                <div class="row clearfix">
+                        <div class="col-md-6 col-sm-12">
+                            <span class="top-email-info">
+                                <i class="fa fa-envelope"></i>
+                                <a href="#">Email: sps.helpdesk@caci.com</a>
+                            </span>
+
+                            <span class="top-phone-no">
+                                <i class="fa fa-phone"></i> 
+                                Call Toll Free: 1-800-234-7453
+                            </span>
+
+                        </div>
+    
+                </div> <!-- end .row  -->
+    
+            </div> <!--  end .container -->
+    
+<main>
+    <!-- Search Section -->
+    <section class="search-section home-search">
+        <div class="masthead text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-md-auto">
+                        <h1> SPS Knowledge Base</h1>
+                        <p class="lead">Welcome...how can we assist you today?       </p>
+                        <form>
+                            <input type="text" class="search-field" placeholder="Search Something ... ">
+                            <button type="submit"><i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Topics -->
+    <section class="topics">
+        <div class="container">
+                <h2 class="section-heading"><span>Explore</span> Help Topics</h2>
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="topics-wrapper border-style">
+                            
+                        <h3><a href="#"><i class="far fa-circle text-blue"></i><span class="icon"></span>General</a></h3>
+                        <ul class="topics-list">
+                            <li><a href="example.html"> Issue with PD² Adapter. </a>
+                            </li>
+                            <li><a href="example.html"> How to find topics? </a>
+                            </li>
+                            <li><a href="example.html"> What is included and why? </a>
+                            </li>
+                            <li><a href="example.html"> Basic knowledge requirments. </a>
+                            </li>
+                            <li><a href="example.html"> Getting Started &amp; What is next. </a>
+                            </li>
+                        </ul>
+                        <ul class="topics-meta">
+                            <li>15 Topics</li>
+                            <li>Level - Medium</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="topics-wrapper border-style">
+                        <h3><a href="#"><i class="far fa-circle text-red"></i><span class="icon"></span>Installation &amp;
+                            Upgrade</a>
+                        </h3>
+                        <ul class="topics-list">
+                            <li><a href="example.html"> How to use this documentation? </a>
+                            </li>
+                            <li><a href="example.html"> How to find topics? </a>
+                            </li>
+                            <li><a href="example.html"> What is included and why? </a>
+                            </li>
+                            <li><a href="example.html"> Basic knowledge requirments. </a>
+                            </li>
+                            <li><a href="example.html"> Getting Started &amp; What is next. </a>
+                            </li>
+                        </ul>
+                        <ul class="topics-meta">
+                            <li>15 Topics</li>
+                            <li>Level - Medium</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="topics-wrapper border-style">
+                            <h3><a href="#"><i class="far fa-circle text-green"></i><span class="icon"></span>PD² Adapter</a>
+                            </h3>
+                        <ul class="topics-list">
+                            <li><a href="example.html"> How to use this documentation? </a>
+                            </li>
+                            <li><a href="example.html"> How to find topics? </a>
+                            </li>
+                            <li><a href="example.html"> What is included and why? </a>
+                            </li>
+                            <li><a href="example.html"> Basic knowledge requirments. </a>
+                            </li>
+                            <li><a href="example.html"> Getting Started &amp; What is next. </a>
+                            </li>
+                        </ul>
+                        <ul class="topics-meta">
+                            <li>15 Topics</li>
+                            <li>Level - Medium</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="topics-wrapper border-style">
+                            <h3><a href="#"><i class="far fa-circle text-purple"></i><span class="icon"></span>Sybase ASE</a>
+                            </h3>
+                        <ul class="topics-list">
+                            <li><a href="example.html"> How to use this documentation? </a>
+                            </li>
+                            <li><a href="example.html"> How to find topics? </a>
+                            </li>
+                            <li><a href="example.html"> What is included and why? </a>
+                            </li>
+                            <li><a href="example.html"> Basic knowledge requirments. </a>
+                            </li>
+                            <li><a href="example.html"> Getting Started &amp; What is next. </a>
+                            </li>
+                        </ul>
+                        <ul class="topics-meta">
+                            <li>15 Topics</li>
+                            <li>Level - Medium</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="topics-wrapper border-style">
+                            <h3><a href="#"><i class="far fa-circle text-red"></i><span class="icon"></span>FPDS-NG</a>
+                            </h3>
+                        <ul class="topics-list">
+                            <li><a href="example.html"> How to use this documentation? </a>
+                            </li>
+                            <li><a href="example.html"> How to find topics? </a>
+                            </li>
+                            <li><a href="example.html"> What is included and why? </a>
+                            </li>
+                            <li><a href="example.html"> Basic knowledge requirments. </a>
+                            </li>
+                            <li><a href="example.html"> Getting Started &amp; What is next. </a>
+                            </li>
+                        </ul>
+                        <ul class="topics-meta">
+                            <li>15 Topics</li>
+                            <li>Level - Medium</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="topics-wrapper border-style">
+                            <h3><a href="#"><i class="far fa-circle text-yellow"></i><span class="icon"></span>Utilities</a>
+                            </h3>
+                        <ul class="topics-list">
+                            <li><a href="example.html"> How to use this documentation? </a>
+                            </li>
+                            <li><a href="example.html"> How to find topics? </a>
+                            </li>
+                            <li><a href="example.html"> What is included and why? </a>
+                            </li>
+                            <li><a href="example.html"> Basic knowledge requirments. </a>
+                            </li>
+                            <li><a href="example.html"> Getting Started &amp; What is next. </a>
+                            </li>
+                        </ul>
+                        <ul class="topics-meta">
+                            <li>15 Topics</li>
+                            <li>Level - Medium</li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+</main>
+
+        <!-- Lates News BLOCK  -->
+
+        <section class="section-content-block section-news-block section-pure-white-bg" id="update_link" >
+                <div class="container">
+                    <h1 class="section-heading"><span>Latest News </span></h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="news-wrapper">
+                                <div class="news-content">
+                                     <div class="news-text">
+                                        <h5><a href="#">SPS Info-Mail is now available</a></h5>
+                                        <p>The latest issue of the SPS Info-Mail is now available. This monthly newsletter is produced by the SPS Level 2/3 Help Desk and is created to keep you abreast of the happenings in the world of SPS support. Visit the April 2019 edition of the SPS Info-Mail at KB ID 18233.</p>
+                                        <a href="#" class="btn news-button">Read More</a>
+                                    </div> <!--  end .news-text  -->
+                                </div> <!-- end .news-content  -->
+                            </div> <!-- end .news-wrapper  -->
+                        </div> <!-- end .col-md-4  -->
+                        <div class="col-md-4">
+                                <div class="news-wrapper">
+                                    <div class="news-content">
+                                         <div class="news-text">
+                                            <h5><a href="#">New Clause Database and Reference Library Installers (0419a) Available</a></h5>
+                                            <p>New Clause Database and Reference Library Installers (0419a) available for:
+                                                    Deviation 2019-O0007 Published March 26, 2019 and Effective March 21, 2019.  Read on for complete details.</p>
+                                            <a href="#" class="btn news-button">Read More</a>
+                                        </div> <!--  end .news-text  -->
+                                    </div> <!-- end .news-content  -->
+                                </div> <!-- end .news-wrapper  -->
+                            </div> <!-- end .col-md-4  -->
+                            <div class="col-md-4">
+                                    <div class="news-wrapper">
+                                        <div class="news-content">
+                                             <div class="news-text">
+                                                <h5><a href="#">March 2019 Standard Data Installer (0319a) Available</a></h5>
+                                                <p>The current SPS Standard Data Installer is accessible from the Downloads section on the SPS Knowledge Base website.  You can review the Summary of Changes at KB ID 18215.</p>
+                                                <a href="#" class="btn news-button">Read More</a>
+                                            </div> <!--  end .news-text  -->
+                                        </div> <!-- end .news-content  -->
+                                    </div> <!-- end .news-wrapper  -->
+                            </div> <!-- end .col-md-4  -->                          
+                            <div class="col-md-4">
+                                    <div class="news-wrapper">
+                                        <div class="news-content">
+                                             <div class="news-text">
+                                                <h5><a href="#">SPS Java 7 Update 211 and SPS Java 8 Update 202 Available</a></h5>
+                                                <p>The SPS Java 7 Update 211 and the SPS Java 8 Update 202 have been accepted by the SPS Joint Program Management Office.  Read on for a complete list of the files that are part of these two deliveries.</p>
+                                                <a href="#" class="btn news-button">Read More</a>
+                                            </div> <!--  end .news-text  -->
+                                        </div> <!-- end .news-content  -->
+                                    </div> <!-- end .news-wrapper  -->
+                            </div> <!-- end .col-md-4  -->                                
+                            <div class="col-md-4">
+                                    <div class="news-wrapper">
+                                        <div class="news-content">
+                                             <div class="news-text">
+                                                <h5><a href="#">New Package Update for the SPS CEFMS Legacy Integration Available</a></h5>
+                                                <p>A new package update for the SPS CEFMS Legacy Integration has been accepted by the SPS Joint Program Management Office for use with PD² v4.2 Increment 2 SR17.</p>
+                                                <a href="#" class="btn news-button">Read More</a>
+                                            </div> <!--  end .news-text  -->
+                                        </div> <!-- end .news-content  -->
+                                    </div> <!-- end .news-wrapper  -->
+                            </div> <!-- end .col-md-4  -->      
+                            <div class="col-md-4">
+                                    <div class="news-wrapper">
+                                        <div class="news-content">
+                                             <div class="news-text">
+                                                <h5><a href="#">Script-Aid v6.11a Now Available</a></h5>
+                                                <p>Script-Aid version 6.11a is now available from the Downloads section of the SPS Knowledge Base website for sites on PD² v4.2 Increment 2 SR17/17a.  Sites who currently have access to Script-Aid v6.11 will be granted access to Script-Aid v6.11a (KB ID 18098). In order to avoid confusion please delete all previous versions of Script-Aid from your computer before proceeding to the Script-Aid v6.11a installation. Read on for complete details..</p>
+                                                <a href="#" class="btn news-button">Read More</a>
+                                            </div> <!--  end .news-text  -->
+                                        </div> <!-- end .news-content  -->
+                                    </div> <!-- end .news-wrapper  -->
+                            </div> <!-- end .col-md-4  -->                                                  
+                    </div>
+                </div>
+    
+            </section>
+    
+
+<!-- BEGIN FOOTER -->
+<footer>
+        <!--  FOOTER WIDGET AREA -->
+
+        <section class="footer-widget-area footer-widget-area-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget-header clearfix">
+                            <h3>ABOUT US</h3>
+                        </div>  <!--  end .footer-widget-header --> 
+                        <p>                                  
+                            The SPS Help Desk mission is to deliver highly valued support to our customers by providing quality solutions to reported issues and proactively enabling the effective and efficient use of CACI Products and services.
+                        </p>
+                        <p>
+                            The SPS Help Desk responds to issues from customers who are using the SPS suite of products and our Quality Management System is ISO 9001:2015 and ISO 20000-1:2011 certified.                        
+                        </p>
+                        <img class="d-inline-block align-top" alt="" src="img/iso9001_CMYK_sm.jpg">
+
+                        <img class="d-inline-block align-top" alt="" src="img/iso20000-CMYK_sm.jpg">
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+
+                        <div class="footer-widget">
+
+                            <div class="sidebar-widget-wrapper">
+
+                                <div class="footer-widget-header clearfix">
+                                    <h3>HELPFUL LINKS</h3>
+                                </div>  <!--  end .footer-widget-header --> 
+
+                                <ul class="footer-useful-links clearfix">
+                                    <li><a href="#"><i class="fa fa-caret-right fa-footer"></i>SPS Info-mail</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right fa-footer"></i>SPS Bulletins</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right fa-footer"></i>Products</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right fa-footer"></i>Roadmaps</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right fa-footer"></i>SPS Site Profile</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right fa-footer"></i>FAQs</a></li>
+                                </ul>
+
+                            </div> <!-- end .footer-widget-wrapper  -->
+
+                        </div> <!--  end .footer-widget  -->            
+
+                    </div> <!--  end .col-md-3 col-sm-6 -->
+
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+
+                        <div class="footer-widget">
+
+                            <div class="sidebar-widget-wrapper">
+
+                                <div class="footer-widget-header clearfix">
+                                    <h3>SUPPORT HOURS</h3>
+                                </div>  <!--  end .footer-widget-header --> 
+
+                                <ul class="footer-support-hours">
+                                    <li><i class="far fa-clock fa-footer"></i> Monday-Friday: 0800 - 1800 ET</li>
+                                    <li><i class="fa fa-envelope fa-footer"></i> Email: sps.helpdesk@caci.com</li>
+                                    <li><i class="fa fa-phone fa-footer"></i> Call Toll Free: 1-800-234-7453</li>
+                                    <li><i class="fa fa-mobile fa-footer"></i> Fax: 1-800-981-3253</li>
+                                </ul>
+
+                            </div> <!-- end .footer-widget-wrapper  -->
+
+                        </div> <!--  end .footer-widget  -->            
+
+                    </div> <!--  end .col-md-3 col-sm-6 -->
+
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+
+                        <div class="footer-widget">
+
+                            <div class="sidebar-widget-wrapper">
+
+                                <div class="footer-widget-header clearfix">
+                                    <h3>SUBSCRIBE US</h3>
+                                </div>  <!--  end .footer-widget-header --> 
+
+                                <p>Every week we publish new articles based on user questions. To get new question updates please subscribe our newsletter. </p>
+                                <div class="input-group footer-subscription">
+                                    <p>
+                                        <input type="email" required="" placeholder="Your email address" class="form-control" name="EMAIL" id="mc4wp_email">
+                                    </p>
+                                    <p class="input-group-btn">
+                                        <input type="submit" class="btn btn-default" value="Join">
+                                    </p>
+                                </div>
+
+                            </div> <!-- end .footer-widget-wrapper  -->
+
+                        </div> <!--  end .footer-widget  -->
+
+                    </div> <!--  end .col-md-3 col-sm-6 -->
+
+                </div> <!-- end row  -->
+
+            </div><!-- end .container  -->
+            
+
+        </section> <!--  end .footer-widget-area  -->
+
+
+            <!--FOOTER CONTENT  -->
+
+            <section class="footer-contents">
+
+                    <div class="container">
+    
+                        <div class="row clearfix">
+    
+                            <div class="col-md-6 col-sm-12">
+                                <p class="copyright-text">  Copyright © <a href="http://www.caci.com" target="_blank">CACI International Inc</a> 2000-2019 All right reserved </p>
+                            </div>  <!-- end .col-sm-6  -->
+    
+                            <div class="col-md-6 col-sm-12 clearfix">
+    
+                                <nav class="footer-nav">
+                                    <ul class="footer-menu" id="menu-footer-menu">
+                                        <li><a href="#" class="nav_menu">Home</a></li>
+                                        <li><a href="#" class="nav_menu">Site Map</a></li>
+                                        <li><a href="#" class="nav_menu">Contact Us</a></li>
+                                        <li><a href="#" class="nav_menu">Log In</a></li>
+                                        <li><a href="#" class="nav_menu">Terms & Conditions</a></li>
+    
+                                    </ul>
+    
+                                 </nav>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </section>
+    
+            </footer>
+
+</div>
+<!--End Page page_wrrapper -->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

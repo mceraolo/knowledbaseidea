@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/header.png" type="image/x-icon">
+    <title>SPS Knowledge Base</title>
+
+        <!-- Bootstrap link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Font Awesome Icons link-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+         
+    <!-- CSS -->
+    <link rel="stylesheet" href="app.css" type="text/css">
+
+</head>
+<body>
+
+<div id="app" class="paper-loading">
+<main class="single single-knowledgebase">
+    <!-- Header -->
+    <nav class="mainnav navbar navbar-default justify-content-between">
+        <div class="container relative">
+            <!-- <a class="offcanvas dl-trigger paper-nav-toggle" data-toggle="offcanvas"
+               aria-expanded="false" aria-label="Toggle navigation">
+                <i></i>
+            </a> -->
+            <a class="navbar-brand" href="knowledgebase.html">
+                <img class="d-inline-block align-top" alt="" src="img/header.png">
+            </a>
+            <div class="paper_menu">
+                <div id="dl-menu" class="xv-menuwrapper responsive-menu">
+                <ul class="dl-menu align-items-center">
+                    <li><a href="#">Download</a></li>
+                    <li class="parent"><a href="#">Solutions</a>
+                        <ul class="lg-submenu">
+                            <li><a href="#">FAQs</a>
+                            <li><a href="#">Call Records</a>
+                            <li><a href="#">Documentation</a>
+                            <li><a href="#">Semy's Corner</a>
+                            <li><a href="alltopics.html">All Topics</a>                           
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="parent"><a href="#">RoadMaps</a>
+                        <ul class="lg-submenu">
+                            <li><a href="#">SR16/16a</a>
+                            <li><a href="#">SR17/17a</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="parent"><a href="#">Authorized Caller</a>
+                        <ul class="lg-submenu">
+                            <li><a href="#">Issue Status</a>
+                            <li><a href="#">Script-Aid Security Codes</a>
+                            <li><a href="#">Submit Issue</a>
+                            <li><a href="#">Authoized Caller Utility</a>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li><a href="#" class="btn btn-default nav-btn">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </nav>
+            <div class="container">
+                    <div class="row clearfix">
+                            <div class="col-md-6 col-sm-12">
+                                <span class="top-email-info">
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="#">Email: sps.helpdesk@caci.com</a>
+                                </span>
+    
+                                <span class="top-phone">
+                                    <i class="fa fa-phone"></i> 
+                                    Call Toll Free: 1-800-234-7453
+                                </span>
+    
+                            </div>
+        
+                    </div> <!-- end .row  -->
+        
+                </div> <!--  end .container -->
+<!-- Login modal -->
+        </div>
+    </div>
+</nav>
+    <div class="search-section">
+        <div class="masthead single-masthead">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-md-auto">
+                        <form>
+                            <input type="text" class="search-field" placeholder="Search Something ... ">
+                            <button type="submit"><i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="knowledgebase.html">Home</a>
+                </li>
+                <li><a href="faq.html">FAQ</a>
+                </li>
+                <li><a href="adapter.html">Adapter</a>
+                </li>                    
+                <li class="active">Knowledge Base ID#: 7115</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="col-lg-10 mx-md-auto ">
+                <article class="post">
+                        <ul class="meta">
+                                <li><span>Created :</span> Feb, 04, 2016</li>
+                                <li><span>Last Updated:</span> January, 5, 2018</li>
+                            </ul>
+                    <h3 class="alert-info" >Something seems to be wrong with either the PD² Adapter, PDS, GFEBS or SPS Legacy Integration (SPSLI). No documents are being extracted from PD².  Also, no documents are being created in PD².  What information should I provide the SPS Help Desk to assist in troubleshooting?</h3>
+                    
+                    <br>
+
+                    <ol type="1" style="color: rgb(85, 84, 84);">
+                            <li>The results of the Adapter Buffer Diagnostic (by date range) script in Script-Aid.</li>
+                            <li>The results of the Event Subscription Diagnostic script in Script-Aid.</li>
+                            <li>The results of the Retrieve Document Information script in Script-Aid for any documents that should have been extracted from the PD²</li>
+                            <li>A screen capture of Partner Profiles in My webMethods (Administration > Integration > B2B> Partner Administration > Partner Profiles) </li>
+                            <li>A screen capture of Transactions in My webMethods (Monitoring > Integration > B2B > Transactions > Saved tab). Ensure that you run a query first by clicking the Search button. (See KB ID 12005) </li>
+                            <li>A copy of the most webMethods error, server, and MWS logs (see KB ID 7028). </li>
+                            <li>The following file from your PD² Adapter server:  C:\SoftwareAG\IntegrationServer\instances\default\bin\server.bat</li>
+                            <li>The following file from your PD² Adapter server:  C:\SoftwareAG\IntegrationServer\instances\default\config\jdbc\pool\MWS Pool.xml</li>
+                            <li>The following file from your PD² Adapter Server: C:\SoftwareAG\MWS\server\default\config\mws.db.xml</li>
+                          </ol>
+
+
+                          <div
+                          class="text-center">
+                      <img src="img/connection.png" alt="" width="300" height="400">
+                  </div>
+                    
+                </article>
+            </div>
+        </div>
+        <div class="feedback">
+                <div class="container">
+                    <div class="col-lg-8 mx-md-auto">
+                        <p><span class="count">250 people found this article helpful what about you?</span>
+                            <a
+                                    class="" href="#">YES<span class="icon-yes"></span>
+                            </a> <a class="" href="#">NO<span class="icon-not"></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!--FOOTER CONTENT  -->
+
+            <section class="footer-contents">
+
+                <div class="container">
+
+                    <div class="row clearfix">
+
+                        <div class="col-md-6 col-sm-12">
+                            <p class="copyright-text">  Copyright © <a href="http://www.caci.com" target="_blank">CACI International Inc</a> 2000-2019 All right reserved </p>
+                        </div>  <!-- end .col-sm-6  -->
+
+                        <div class="col-md-6 col-sm-12 clearfix">
+
+                            <nav class="footer-nav">
+                                <ul class="footer-menu" id="menu-footer-menu">
+                                    <li><a href="#" class="nav_menu">Home</a></li>
+                                    <li><a href="#" class="nav_menu">Site Map</a></li>
+                                    <li><a href="#" class="nav_menu">Contact Us</a></li>
+                                    <li><a href="#" class="nav_menu">Log In</a></li>
+                                    <li><a href="#" class="nav_menu">Terms & Conditions</a></li>
+
+                                </ul>
+
+                             </nav>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </footer>
+    </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
